@@ -1,17 +1,10 @@
-// FIX: To resolve the "Cannot find namespace 'JSX'" error, React must be imported.
-// This makes the necessary JSX typings, such as JSX.Element, available in the file.
 import React from 'react';
 
-export enum Page {
+export enum Tab {
   Home = 'Home',
-  About = 'About',
+  Explore = 'Explore',
   Events = 'Events',
-  Programs = 'Programs',
-  Resources = 'Resources',
-  Projects = 'Projects',
-  Sponsors = 'Sponsors',
-  Volunteer = 'Volunteer',
-  Contact = 'Contact'
+  Profile = 'Profile',
 }
 
 export type Language = 'en' | 'ar';
@@ -26,6 +19,15 @@ export interface Event {
   type: 'upcoming' | 'past';
 }
 
+export interface User {
+  id: number;
+  name: string;
+  arabicName?: string;
+  avatarUrl: string;
+  role: string;
+}
+
+// FIX: Add TeamMember interface
 export interface TeamMember {
   id: number;
   nameKey: string;
@@ -36,25 +38,33 @@ export interface TeamMember {
   researchGateUrl?: string;
 }
 
-export interface Program {
+export interface GamificationStats {
+  xp: number;
+  level: number;
+  rank: string;
+  badges: Badge[];
+}
+
+export interface Badge {
+  id: number;
+  nameKey: string;
+  icon: string; // Could be an emoji or an icon component name
+}
+
+export interface Article {
   id: number;
   titleKey: string;
-  descriptionKey: string;
-  // FIX: Replaced JSX.Element with React.ReactElement to resolve "Cannot find namespace 'JSX'" error by using an explicit type from the imported React module.
-  icon: (props: React.SVGProps<SVGSVGElement>) => React.ReactElement;
+  author: User;
+  publishDate: string;
+  thumbnailUrl: string;
+  categoryKey: string;
 }
 
-export interface Resource {
+export interface CommunityPost {
     id: number;
     titleKey: string;
-    typeKey: string;
-    topicKey: string;
-}
-
-export interface Project {
-    id: number;
-    titleKey: string;
-    descriptionKey: string;
-    imageUrl: string;
-    githubUrl: string;
+    author: User;
+    timestamp: string;
+    replies: number;
+    categoryKey: string;
 }

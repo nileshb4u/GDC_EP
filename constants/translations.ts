@@ -1,35 +1,102 @@
-
-import { Page } from '../types';
+import { Tab } from '../types';
 
 export const translations = {
   en: {
+    // App Identity
+    appName: 'GDG Dhahran',
+    
     // Navigation
-    [Page.Home]: 'Home',
-    [Page.About]: 'About',
-    [Page.Events]: 'Events',
-    [Page.Programs]: 'Programs',
-    [Page.Resources]: 'Resources',
-    [Page.Projects]: 'Projects',
-    [Page.Sponsors]: 'Sponsors',
-    [Page.Volunteer]: 'Volunteer',
-    [Page.Contact]: 'Contact',
+    [Tab.Home]: 'Home',
+    [Tab.Explore]: 'Explore',
+    [Tab.Events]: 'Events',
+    [Tab.Profile]: 'Profile',
     languageToggle: 'AR',
+
+    // Home Page
+    welcomeBanner: 'Welcome to GDG Dhahran',
+    welcomeGoodMorning: 'Good Morning!',
+    welcomeGoodEvening: 'Good Evening!',
+    quickActions: 'Quick Actions',
+    yourGamification: 'Your Progress',
+    xp: 'XP',
+    level: 'Level',
+    rank: 'Rank',
+    upcomingEventsTitle: 'Upcoming Events',
+    featuredContributors: 'Featured Contributors',
+    trendingDiscussions: 'Trending Discussions',
+    latestContent: 'Latest Content',
+    latestNews: 'Latest News',
+
+    // Explore Page
+    exploreTitle: 'Explore',
+    articles: 'Articles',
+    videos: 'Videos',
+    guides: 'Guides',
+    projects: 'Projects',
+    resources: 'Resources',
+    jobBoard: 'Job Board',
+    challenges: 'Challenges',
+    discussions: 'Discussions',
+    
+    // Community & Content Creation
+    whatToCreate: 'What would you like to create?',
+    postDiscussion: 'Post Discussion',
+    createArticle: 'Post Article',
+    createVideo: 'Post a Video',
+    createProject: 'Share a Project',
+
+    createDiscussion: 'Create Discussion',
+    whatsOnYourMind: "What's on your mind?",
+    post: 'Post',
+    
+    createArticleTitle: 'Create a New Article',
+    articleTitle: 'Article Title',
+    articleContent: 'Write your article content here...',
+    publishArticle: 'Publish Article',
+
+    createVideoTitle: 'Share a Video',
+    videoUrl: 'Video URL (e.g., YouTube, Vimeo)',
+    shareVideo: 'Share Video',
+    
+    createProjectTitle: 'Share a Project',
+    projectUrl: 'Project URL (e.g., GitHub, Behance)',
+    projectDescription: 'Briefly describe your project',
+    shareProject: 'Share Project',
+
+    // Events Page
+    eventsPageTitle: 'Events',
+    upcoming: 'Upcoming',
+    past: 'Past',
+
+    // Profile Page
+    profileTitle: 'My Profile',
+    myBadges: 'My Badges',
+    myContributions: 'My Contributions',
+    myCheckIns: 'Event Check-ins',
+    savedItems: 'Saved Items',
+    editProfile: 'Edit Profile',
+    
+    // Gamification
+    badgeCommunityHelper: 'Community Helper',
+    badgeChallengeChampion: 'Challenge Champion',
+    badgeTopContributor: 'Top Contributor',
+
+    // Generic
+    viewAll: 'View All',
     
     // Hero Section
-    heroTitle: 'Google Developer Chapter – Eastern Province',
-    heroSubtitle: 'Building developer skills, growing networks, and launching local tech projects across the Eastern Province.',
+    heroTitle: 'Google Developer Group – Dhahran',
+    heroSubtitle: 'Building developer skills, growing networks, and launching local tech projects.',
     joinCommunity: 'Join the Community',
     viewEvents: 'View Events',
     
     // Stats
     membersJoined: 'Members Joined',
-    upcomingEvents: 'Upcoming Events',
     projectsBuilt: 'Projects Built',
     
-    // Upcoming Events Section
-    upcomingEventsTitle: 'Upcoming Events',
+    // Events
     rsvp: 'RSVP',
-    eventTitle1: 'DevFest Eastern Province 2024',
+    eventTitle1: 'DevFest Dhahran 2024',
     eventDate1: 'Dec 15, 2024 | 9:00 AM',
     eventLocation1: 'KFUPM, Dhahran',
     eventSpeaker1: 'Various Speakers',
@@ -50,107 +117,167 @@ export const translations = {
     eventSpeaker4: 'Yousef Al-Harbi',
     eventCategory4: 'Web',
 
-    // Community Highlights
-    highlightsTitle: 'Community Highlights',
-    highlight1: 'DevFest 2023 Main Stage',
-    highlight2: 'Hands-on Workshop Session',
-    highlight3: 'Networking at a Local Meetup',
-    
-    // Footer
-    footerText: `© ${new Date().getFullYear()} Google Developer Chapter – Eastern Province`,
-    privacyPolicy: 'Privacy Policy',
-    codeOfConduct: 'Code of Conduct',
-
-    // About Page
-    aboutTitle: 'About Us',
-    missionStatement: 'Mission Statement',
-    missionText: 'To foster a vibrant, inclusive, and collaborative tech community in the Eastern Province by providing a platform for learning, sharing, and innovation with Google technologies.',
-    whoWeAre: 'Who We Are',
-    whoWeAreText: 'We are a passionate group of developers, students, and tech enthusiasts from Dammam, Khobar, and Jubail, dedicated to sharing knowledge and building a stronger local tech ecosystem.',
-    whatWeDo: 'What We Do',
-    whatWeDoText: 'We organize a variety of events, from large-scale conferences like DevFest to hands-on workshops, study jams, and mentorship programs, all aimed at helping our community grow.',
-    teamMembers: 'Meet the Team',
-    codeOfConductSummaryTitle: 'Code of Conduct',
-    codeOfConductSummary: 'We commit to an inclusive, respectful environment. Discrimination or harassment is not tolerated. Report issues via our contact page.',
-    linkToFullPage: 'Read the full Code of Conduct',
-
-    // Team Members
-    teamMember1Name: 'Nilesh Khedkar, PMP®',
-    teamMember1Role: 'Chapter Lead',
-    teamMember2Name: 'Sara Al-Qahtani',
-    teamMember2Role: 'Co-Organizer / Women Techmakers Lead',
-    teamMember3Name: 'Khalid Al-Mutairi',
-    teamMember3Role: 'Technical Lead (Cloud)',
-    teamMember4Name: 'Noura Al-Dosari',
-    teamMember4Role: 'Community Manager',
-
-    // Events Page
-    eventsPageTitle: 'Our Events',
-    filterByCategory: 'Filter by category:',
-    allCategories: 'All',
-    categoryAIML: 'AI/ML',
-    categoryWeb: 'Web',
-    categoryCloud: 'Cloud',
-    categoryMobile: 'Mobile',
-    pastEvents: 'Past Events',
-    
     // RSVP Modal
     rsvpModalTitle: 'RSVP for this Event',
     rsvpModalText: 'You will be redirected to our registration page to confirm your attendance. We look forward to seeing you there!',
     rsvpModalGoogleForm: 'Proceed to Google Form',
     rsvpModalClose: 'Close',
 
+    // Content
+    articleTitle1: 'Mastering State Management in Flutter',
+    articleTitle2: 'A Guide to the Gemini API for Web Devs',
+    postTitle1: 'Best practices for deploying on Google Cloud Run?',
+    postTitle2: 'Anyone attending the upcoming Web Dev meetup?',
+    
+    // Footer
+    footerText: `© ${new Date().getFullYear()} Google Developer Group – Dhahran`,
+    privacyPolicy: 'Privacy Policy',
+    codeOfConduct: 'Code of Conduct',
+
+    // FIX: Add missing translations
+    // About Page
+    aboutTitle: 'About GDG Dhahran',
+    missionStatement: 'Our Mission',
+    missionText: 'To be a platform for developers to connect, learn, and grow together, fostering a vibrant tech community in the Eastern Province.',
+    whoWeAre: 'Who We Are',
+    whoWeAreText: 'We are a passionate group of developers, students, and tech enthusiasts who are dedicated to sharing knowledge and building a strong local tech ecosystem.',
+    whatWeDo: 'What We Do',
+    whatWeDoText: 'We organize a variety of events, including tech talks, workshops, study jams, and our annual flagship event, DevFest. These events cover a wide range of technologies, from mobile and web development to cloud and AI.',
+    teamMembers: 'Meet the Team',
+    codeOfConductSummaryTitle: 'Our Community, Our Commitment',
+    codeOfConductSummary: 'We are committed to providing a friendly, safe and welcoming environment for all. Please take a moment to read our full Code of Conduct.',
+    linkToFullPage: 'Read the full Code of Conduct',
+
+    // Team Members
+    teamMemberName1: 'Nilesh Khedkar',
+    teamMemberRole1: 'GDG Organizer',
+    teamMemberName2: 'To Be Decided',
+    teamMemberRole2: 'Team Member',
+    teamMemberName3: 'To Be Decided',
+    teamMemberRole3: 'Team Member',
+    teamMemberName4: 'To Be Decided',
+    teamMemberRole4: 'Team Member',
+    
     // Volunteer Page
-    volunteerTitle: 'Volunteer With Us',
-    volunteerIntro: 'Our community is powered by passionate volunteers. Join us to help organize events, manage programs, and build a thriving tech ecosystem in the Eastern Province.',
+    volunteerTitle: 'Become a Volunteer',
+    volunteerIntro: 'Join our team and help us build a thriving developer community. We are looking for passionate individuals to help with event organization, content creation, and more.',
     applyNow: 'Apply Now',
     formName: 'Full Name',
     formEmail: 'Email Address',
-    formSkills: 'Your Skills (e.g., Public Speaking, Flutter, Project Management)',
+    formSkills: 'Your Skills & Experience',
     formInterests: 'Areas of Interest',
-    interestPM: 'Program Manager',
-    interestCM: 'Community Manager',
-    interestSponsorship: 'Sponsorship Lead',
-    interestStudent: 'Student Coordinator',
+    interestPM: 'Project Management',
+    interestCM: 'Community Management',
+    interestSponsorship: 'Sponsorship & Partnerships',
+    interestStudent: 'Student Ambassador',
     submitApplication: 'Submit Application',
-    applicationSubmitted: 'Thank you! Your application has been submitted.',
+    applicationSubmitted: 'Thank you for your application!',
     
-    // Placeholder Pages
-    programsTitle: 'Our Programs',
-    resourcesTitle: 'Community Resources',
-    projectsTitle: 'Community Projects',
-    sponsorsTitle: 'Our Sponsors',
-    contactTitle: 'Contact Us',
-    pageUnderConstruction: 'This page is under construction. Check back soon!',
+    // Placeholder Page
+    pageUnderConstruction: 'This page is under construction. Stay tuned!',
+
+    // Categories
+    categoryAIML: 'AI/ML',
+    categoryMobile: 'Mobile',
+    categoryWeb: 'Web',
+    categoryCloud: 'Cloud',
   },
   ar: {
+    // App Identity
+    appName: 'GDG الظهران',
+
     // Navigation
-    [Page.Home]: 'الرئيسية',
-    [Page.About]: 'عنّا',
-    [Page.Events]: 'الفعاليات',
-    [Page.Programs]: 'البرامج',
-    [Page.Resources]: 'المصادر',
-    [Page.Projects]: 'المشاريع',
-    [Page.Sponsors]: 'الرعاة',
-    [Page.Volunteer]: 'تطوع معنا',
-    [Page.Contact]: 'اتصل بنا',
+    [Tab.Home]: 'الرئيسية',
+    [Tab.Explore]: 'استكشف',
+    [Tab.Events]: 'الفعاليات',
+    [Tab.Profile]: 'ملفي',
     languageToggle: 'EN',
     
+    // Home Page
+    welcomeBanner: 'مرحبًا بكم في GDG الظهران',
+    welcomeGoodMorning: 'صباح الخير!',
+    welcomeGoodEvening: 'مساء الخير!',
+    quickActions: 'إجراءات سريعة',
+    yourGamification: 'تقدمك',
+    xp: 'نقطة خبرة',
+    level: 'المستوى',
+    rank: 'الترتيب',
+    upcomingEventsTitle: 'الفعاليات القادمة',
+    featuredContributors: 'المساهمون المميزون',
+    trendingDiscussions: 'النقاشات الشائعة',
+    latestContent: 'أحدث المحتوى',
+    latestNews: 'آخر الأخبار',
+    
+    // Explore Page
+    exploreTitle: 'استكشف',
+    articles: 'مقالات',
+    videos: 'فيديوهات',
+    guides: 'أدلة',
+    projects: 'مشاريع',
+    resources: 'مصاندر',
+    jobBoard: 'وظائف',
+    challenges: 'تحديات',
+    discussions: 'نقاشات',
+
+    // Community & Content Creation
+    whatToCreate: 'ماذا تود أن تنشئ؟',
+    postDiscussion: 'انشر نقاشًا',
+    createArticle: 'انشر مقالاً',
+    createVideo: 'انشر فيديو',
+    createProject: 'شارك مشروعًا',
+
+    createDiscussion: 'إنشاء نقاش',
+    whatsOnYourMind: 'بماذا تفكر؟',
+    post: 'نشر',
+    
+    createArticleTitle: 'إنشاء مقال جديد',
+    articleTitle: 'عنوان المقال',
+    articleContent: 'اكتب محتوى مقالك هنا...',
+    publishArticle: 'نشر المقال',
+
+    createVideoTitle: 'مشاركة فيديو',
+    videoUrl: 'رابط الفيديو (مثال: يوتيوب، فيميو)',
+    shareVideo: 'مشاركة الفيديو',
+    
+    createProjectTitle: 'مشاركة مشروع',
+    projectUrl: 'رابط المشروع (مثال: GitHub, Behance)',
+    projectDescription: 'صف مشروعك باختصار',
+    shareProject: 'مشاركة المشروع',
+
+    // Events Page
+    eventsPageTitle: 'الفعاليات',
+    upcoming: 'القادمة',
+    past: 'السابقة',
+
+    // Profile Page
+    profileTitle: 'ملفي الشخصي',
+    myBadges: 'أوسمتي',
+    myContributions: 'مساهماتي',
+    myCheckIns: 'تسجيل حضوري',
+    savedItems: 'المحفوظات',
+    editProfile: 'تعديل الملف الشخصي',
+
+    // Gamification
+    badgeCommunityHelper: 'مساعد المجتمع',
+    badgeChallengeChampion: 'بطل التحديات',
+    badgeTopContributor: 'مساهم مميز',
+    
+    // Generic
+    viewAll: 'عرض الكل',
+
     // Hero Section
-    heroTitle: 'فرع مطوري جوجل — المنطقة الشرقية',
-    heroSubtitle: 'بناء مهارات المطورين، توسيع الشبكات، وإطلاق مشاريع تقنية محلية في المنطقة الشرقية.',
-    joinCommunity: 'انضم إلى المجتمع',
+    heroTitle: 'مجموعة مطوري جوجل – الظهران',
+    heroSubtitle: 'بناء مهارات المطورين، توسيع الشبكات، وإطلاق مشاريع تقنية محلية.',
+    joinCommunity: 'انضم للمجتمع',
     viewEvents: 'عرض الفعاليات',
 
     // Stats
     membersJoined: 'عضو انضم',
-    upcomingEvents: 'فعالية قادمة',
     projectsBuilt: 'مشروع مكتمل',
     
-    // Upcoming Events Section
-    upcomingEventsTitle: 'الفعاليات القادمة',
+    // Events
     rsvp: 'تسجيل',
-    eventTitle1: 'مهرجان المطورين (DevFest) المنطقة الشرقية 2024',
+    eventTitle1: 'مهرجان المطورين (DevFest) الظهران 2024',
     eventDate1: '15 ديسمبر 2024 | 9:00 صباحًا',
     eventLocation1: 'جامعة الملك فهد، الظهران',
     eventSpeaker1: 'متحدثون متنوعون',
@@ -171,77 +298,69 @@ export const translations = {
     eventSpeaker4: 'يوسف الحربي',
     eventCategory4: 'الويب',
 
-    // Community Highlights
-    highlightsTitle: 'أبرز لقطات المجتمع',
-    highlight1: 'المسرح الرئيسي في DevFest 2023',
-    highlight2: 'جلسة ورشة عمل تطبيقية',
-    highlight3: 'التواصل في لقاء محلي',
-
-    // Footer
-    footerText: `© ${new Date().getFullYear()} فرع مطوري جوجل – المنطقة الشرقية`,
-    privacyPolicy: 'سياسة الخصوصية',
-    codeOfConduct: 'مدونة السلوك',
-
-    // About Page
-    aboutTitle: 'عن GDG الشرقية',
-    missionStatement: 'بيان المهمة',
-    missionText: 'نهدف إلى رعاية مجتمع تقني نابض بالحياة وشامل وتعاوني في المنطقة الشرقية من خلال توفير منصة للتعلم والمشاركة والابتكار باستخدام تقنيات جوجل.',
-    whoWeAre: 'من نحن',
-    whoWeAreText: 'نحن مجموعة شغوفة من المطورين والطلاب وعشاق التكنولوجيا من الدمام والخبر والجبيل، ملتزمون بمشاركة المعرفة وبناء نظام بيئي تقني أقوى محليًا.',
-    whatWeDo: 'ماذا نفعل',
-    whatWeDoText: 'ننظم مجموعة متنوعة من الفعاليات، من المؤتمرات الكبرى مثل DevFest إلى ورش العمل التطبيقية وجلسات الدراسة وبرامج الإرشاد، وكلها تهدف إلى مساعدة مجتمعنا على النمو.',
-    teamMembers: 'تعرف على الفريق',
-    codeOfConductSummaryTitle: 'مدونة السلوك',
-    codeOfConductSummary: 'نحن نلتزم ببيئة شاملة ومحترمة. لا يتم التسامح مع التمييز أو التحرش. يرجى الإبلاغ عن أي مشاكل عبر صفحة الاتصال الخاصة بنا.',
-    linkToFullPage: 'اقرأ مدونة السلوك كاملة',
-    
-    // Team Members
-    teamMember1Name: 'نيليش كهدكار، PMP®',
-    teamMember1Role: 'قائد الفرع',
-    teamMember2Name: 'سارة القحطاني',
-    teamMember2Role: 'منظم مشارك / قائدة Women Techmakers',
-    teamMember3Name: 'خالد المطيري',
-    teamMember3Role: 'قائد تقني (الحوسبة السحابية)',
-    teamMember4Name: 'نورة الدوسري',
-    teamMember4Role: 'مديرة المجتمع',
-    
-    // Events Page
-    eventsPageTitle: 'فعالياتنا',
-    filterByCategory: 'تصفية حسب الفئة:',
-    allCategories: 'الكل',
-    categoryAIML: 'الذكاء الاصطناعي',
-    categoryWeb: 'الويب',
-    categoryCloud: 'السحابة',
-    categoryMobile: 'تطبيقات الجوال',
-    pastEvents: 'فعاليات سابقة',
-    
     // RSVP Modal
     rsvpModalTitle: 'التسجيل في هذه الفعالية',
     rsvpModalText: 'سيتم توجيهك إلى صفحة التسجيل الخاصة بنا لتأكيد حضورك. نتطلع لرؤيتك هناك!',
     rsvpModalGoogleForm: 'الانتقال إلى نموذج جوجل',
     rsvpModalClose: 'إغلاق',
 
+    // Content
+    articleTitle1: 'إتقان إدارة الحالة في فلاتر',
+    articleTitle2: 'دليل لواجهة Gemini API لمطوري الويب',
+    postTitle1: 'ما هي أفضل الممارسات للنشر على Google Cloud Run؟',
+    postTitle2: 'هل سيحضر أحد لقاء مطوري الويب القادم؟',
+
+    // Footer
+    footerText: `© ${new Date().getFullYear()} مجموعة مطوري جوجل – الظهران`,
+    privacyPolicy: 'سياسة الخصوصية',
+    codeOfConduct: 'مدونة السلوك',
+    
+    // FIX: Add missing translations
+    // About Page
+    aboutTitle: 'حول GDG الظهران',
+    missionStatement: 'مهمتنا',
+    missionText: 'أن نكون منصة للمطورين للتواصل والتعلم والنمو معًا، مما يعزز مجتمعًا تقنيًا نابضًا بالحياة في المنطقة الشرقية.',
+    whoWeAre: 'من نحن',
+    whoWeAreText: 'نحن مجموعة شغوفة من المطورين والطلاب وعشاق التكنولوجيا المكرسين لمشاركة المعرفة وبناء نظام بيئي تقني محلي قوي.',
+    whatWeDo: 'ماذا نفعل',
+    whatWeDoText: 'ننظم مجموعة متنوعة من الفعاليات، بما في ذلك المحادثات التقنية وورش العمل والجلسات الدراسية وفعاليتنا السنوية الرئيسية DevFest. تغطي هذه الفعاليات مجموعة واسعة من التقنيات، من تطوير تطبيقات الجوال والويب إلى السحابة والذكاء الاصطناعي.',
+    teamMembers: 'تعرف على الفريق',
+    codeOfConductSummaryTitle: 'مجتمعنا، التزامنا',
+    codeOfConductSummary: 'نحن ملتزمون بتوفير بيئة ودية وآمنة ومرحبة للجميع. يرجى قضاء بعض الوقت لقراءة مدونة السلوك الكاملة الخاصة بنا.',
+    linkToFullPage: 'اقرأ مدونة السلوك الكاملة',
+
+    // Team Members
+    teamMemberName1: 'نيليش كيدكر',
+    teamMemberRole1: 'منظم GDG',
+    teamMemberName2: 'سيتم تحديده لاحقاً',
+    teamMemberRole2: 'عضو فريق',
+    teamMemberName3: 'سيتم تحديده لاحقاً',
+    teamMemberRole3: 'عضو فريق',
+    teamMemberName4: 'سيتم تحديده لاحقاً',
+    teamMemberRole4: 'عضو فريق',
+
     // Volunteer Page
-    volunteerTitle: 'تطوع معنا',
-    volunteerIntro: 'مجتمعنا مدعوم بمتطوعين شغوفين. انضم إلينا للمساعدة في تنظيم الفعاليات وإدارة البرامج وبناء نظام بيئي تقني مزدهر في المنطقة الشرقية.',
+    volunteerTitle: 'كن متطوعًا',
+    volunteerIntro: 'انضم إلى فريقنا وساعدنا في بناء مجتمع مطورين مزدهر. نحن نبحث عن أفراد متحمسين للمساعدة في تنظيم الفعاليات وإنشاء المحتوى والمزيد.',
     applyNow: 'قدم الآن',
     formName: 'الاسم الكامل',
     formEmail: 'البريد الإلكتروني',
-    formSkills: 'مهاراتك (مثال: الخطابة، فلاتر، إدارة المشاريع)',
+    formSkills: 'مهاراتك وخبراتك',
     formInterests: 'مجالات الاهتمام',
-    interestPM: 'مدير برامج',
-    interestCM: 'مدير مجتمع',
-    interestSponsorship: 'مسؤول الرعايات',
-    interestStudent: 'منسق طلابي',
+    interestPM: 'إدارة المشاريع',
+    interestCM: 'إدارة المجتمع',
+    interestSponsorship: 'الرعاية والشراكات',
+    interestStudent: 'سفير الطلاب',
     submitApplication: 'إرسال الطلب',
-    applicationSubmitted: 'شكرًا لك! تم إرسال طلبك بنجاح.',
+    applicationSubmitted: 'شكرًا لتقديم طلبك!',
 
-    // Placeholder Pages
-    programsTitle: 'برامجنا',
-    resourcesTitle: 'مصادر المجتمع',
-    projectsTitle: 'مشاريع المجتمع',
-    sponsorsTitle: 'رعاتنا',
-    contactTitle: 'اتصل بنا',
-    pageUnderConstruction: 'هذه الصفحة قيد الإنشاء. عد قريبًا!',
+    // Placeholder Page
+    pageUnderConstruction: 'هذه الصفحة قيد الإنشاء. ترقبوا!',
+
+    // Categories
+    categoryAIML: 'الذكاء الاصطناعي',
+    categoryMobile: 'تطبيقات الجوال',
+    categoryWeb: 'الويب',
+    categoryCloud: 'السحابة',
   },
 };

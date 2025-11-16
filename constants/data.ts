@@ -1,4 +1,6 @@
-import { Event, TeamMember } from '../types';
+
+
+import { Event, User, GamificationStats, Badge, Article, CommunityPost, TeamMember } from '../types';
 import { MeetupIcon, YouTubeIcon, LinkedInIcon, DiscordIcon } from '../components/icons';
 
 export const events: Event[] = [
@@ -40,37 +42,68 @@ export const events: Event[] = [
   },
 ];
 
+export const users: { [key: number]: User } = {
+  1: { id: 1, name: 'Nora Al-Saud', avatarUrl: 'https://i.pravatar.cc/150?u=nora', role: 'AI/ML Enthusiast' },
+  2: { id: 2, name: 'Saleh Al-Amri', avatarUrl: 'https://i.pravatar.cc/150?u=saleh', role: 'Flutter Developer' },
+  3: { id: 3, name: 'Admin', avatarUrl: '__FILE_0__', role: 'Chapter Lead' },
+};
+
+export const badges: Badge[] = [
+    { id: 1, nameKey: 'badgeCommunityHelper', icon: '🤝' },
+    { id: 2, nameKey: 'badgeChallengeChampion', icon: '🏆' },
+    { id: 3, nameKey: 'badgeTopContributor', icon: '✍️' },
+];
+
+export const userGamification: GamificationStats = {
+    xp: 4280,
+    level: 12,
+    rank: 'Gold Contributor',
+    badges: badges,
+};
+
+export const articles: Article[] = [
+    { id: 1, titleKey: 'articleTitle1', author: users[2], publishDate: '2 days ago', thumbnailUrl: 'https://images.unsplash.com/photo-1617040619263-41c5a9ca7521?w=400&q=80', categoryKey: 'categoryMobile' },
+    { id: 2, titleKey: 'articleTitle2', author: users[1], publishDate: '5 days ago', thumbnailUrl: 'https://images.unsplash.com/photo-1677756119517-756a188d2d94?w=400&q=80', categoryKey: 'categoryAIML' },
+];
+
+export const communityPosts: CommunityPost[] = [
+    { id: 1, titleKey: 'postTitle1', author: users[1], timestamp: '3h ago', replies: 5, categoryKey: 'categoryCloud' },
+    { id: 2, titleKey: 'postTitle2', author: users[2], timestamp: '1d ago', replies: 12, categoryKey: 'categoryWeb' },
+];
+
+// FIX: Add teamMembers data
 export const teamMembers: TeamMember[] = [
-  {
-    id: 1,
-    nameKey: 'teamMember1Name',
-    roleKey: 'teamMember1Role',
-    imageUrl: '__FILE_0__',
-    linkedinUrl: 'https://www.linkedin.com/in/nilesh-khedkar-pmp%C2%AE-24628b17/',
-    xUrl: 'https://x.com/nileshb4u',
-    researchGateUrl: 'https://www.researchgate.net/profile/Nilesh-Khedkar-4',
-  },
-  {
-    id: 2,
-    nameKey: 'teamMember2Name',
-    roleKey: 'teamMember2Role',
-    imageUrl: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&q=80',
-    linkedinUrl: 'https://linkedin.com/',
-  },
-  {
-    id: 3,
-    nameKey: 'teamMember3Name',
-    roleKey: 'teamMember3Role',
-    imageUrl: 'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=400&h=400&fit=crop&q=80',
-    linkedinUrl: 'https://linkedin.com/',
-  },
-  {
-    id: 4,
-    nameKey: 'teamMember4Name',
-    roleKey: 'teamMember4Role',
-    imageUrl: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop&q=80',
-    linkedinUrl: 'https://linkedin.com/',
-  },
+    {
+        id: 1,
+        nameKey: 'teamMemberName1',
+        roleKey: 'teamMemberRole1',
+        imageUrl: 'https://avatar.iran.liara.run/public/boy?username=nileshkhedkar',
+        linkedinUrl: 'https://www.linkedin.com/in/nilesh-khedkar-pmp%C2%AE-24628b17/',
+        xUrl: 'https://x.com/nileshb4u',
+    },
+    {
+        id: 2,
+        nameKey: 'teamMemberName2',
+        roleKey: 'teamMemberRole2',
+        imageUrl: 'https://i.pravatar.cc/150?u=tbd2',
+        linkedinUrl: 'https://www.linkedin.com/in/',
+        researchGateUrl: 'https://www.researchgate.net/profile/',
+    },
+    {
+        id: 3,
+        nameKey: 'teamMemberName3',
+        roleKey: 'teamMemberRole3',
+        imageUrl: 'https://i.pravatar.cc/150?u=tbd3',
+        linkedinUrl: 'https://www.linkedin.com/in/',
+        xUrl: 'https://x.com/',
+    },
+    {
+        id: 4,
+        nameKey: 'teamMemberName4',
+        roleKey: 'teamMemberRole4',
+        imageUrl: 'https://i.pravatar.cc/150?u=tbd4',
+        linkedinUrl: 'https://www.linkedin.com/in/',
+    },
 ];
 
 export const socialLinks = [

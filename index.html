@@ -3,13 +3,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GDG Eastern Province</title>
+    <title>GDG Dhahran</title>
+    
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#111827" media="(prefers-color-scheme: dark)">
+    <link rel="manifest" href="/manifest.json" />
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Kufi+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cairo:wght@400;500;600;700;800&family=Noto+Kufi+Arabic:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script>
       tailwind.config = {
         darkMode: 'class',
@@ -17,7 +23,7 @@
           extend: {
             fontFamily: {
               sans: ['Inter', 'sans-serif'],
-              arabic: ['Noto Kufi Arabic', 'sans-serif'],
+              arabic: ['Cairo', 'Noto Kufi Arabic', 'sans-serif'],
             },
             colors: {
               'gdg-blue': '#4285F4',
@@ -36,7 +42,23 @@
         font-family: 'Inter', sans-serif;
       }
       html[lang="ar"] body, html[dir="rtl"] body {
-        font-family: 'Noto Kufi Arabic', sans-serif;
+        font-family: 'Cairo', 'Noto Kufi Arabic', sans-serif;
+      }
+      /* Prevent content from being hidden by the bottom nav */
+      body {
+        padding-bottom: 80px; /* Adjust based on BottomNav height */
+      }
+      /* Hide scrollbar for Chrome, Safari and Opera */
+      ::-webkit-scrollbar {
+        display: none;
+      }
+      /* Hide scrollbar for IE, Edge and Firefox */
+      * {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+      }
+      .hide-scrollbar::-webkit-scrollbar {
+        display: none;
       }
     </style>
   <script type="importmap">
